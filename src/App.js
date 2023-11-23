@@ -21,9 +21,7 @@ const App = () => {
 
   const handleAddTransaction = (newTransaction) => {
     setFilteredTransactions([...filteredTransactions, newTransaction]);
-    // The following line doesn't persist to the backend as per requirements
-    // You can add backend logic if needed
-    // For now, just updating the UI
+    
     setTransactions([...transactions, newTransaction]);
   };
 
